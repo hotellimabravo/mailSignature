@@ -1,35 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Assinatura E-mail</title>
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
 			* {
 				margin: 0;
 				padding: 0;
 				box-sizing: border-box;
 				text-decoration: none;
 			}
+			body {
+				width: 500px;
+				height: 300px;
+			}
+			.assinatura {
+				display: flex;
+				justify-content: space-around;
+			}
+			.imagemPrincipal_img {
+				width: 185px;
+			}
+			.ladoB {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+			}
+			.dados {
+				font-family: 'Roboto Mono', monospace;
+				font-size: 18px;
+				text-align: center;
+			}
+			.name {
+				font-weight: 700;
+			}
+			.mail {
+				font-size: 15px;
+				font-weight: 100;
+			}
+			.mail a {
+				text-decoration: none;
+				color: #000;
+			}
+			.phone {
+				font-size: 15px;
+				font-weight: 400;
+			}
+			.phone a {
+				text-decoration: none;
+				color: #000;
+			}
+			.social {
+				display: flex;
+				justify-content: space-between;
+			}
+			.social img {
+				width: 25px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="assinatura">
-			<div class="imagem">
-				<img class="imagem" src="./Programador-1.png" alt="" />
+			<div class="ladoA">
+				<div class="imagemPrincipal">
+					<img class="imagemPrincipal_img" src="./Programador-1.png" alt="" />
+				</div>
 			</div>
-			<div class="dados">
-				<p class="name">Hugo Leonardo Baltazar</p>
-				<p class="mail">hugo.balttazar@gmail.com</p>
-				<p class="phone">+55.11.9.3585.6740</p>
-			</div>
-			<div class="social">
-				<div class="facebook"></div>
-				<div class="instagram"></div>
-				<div class="tweeter"></div>
-				<div class="linkedin"></div>
-				<div class="github"></div>
+			<div class="ladoB">
+				<div class="dados">
+					<p class="name">Hugo Leonardo Baltazar</p>
+					<p class="mail">
+						<a href="mailto:hugobalttazar@gmail.com"
+							>hugo.balttazar@gmail.com</a
+						>
+					</p>
+					<p class="phone">
+						<a
+							href="https://contate.me/hotellimabravo_dev"
+							class="wapp_link"
+							target="_blank"
+						>
+							Cel.: +55.11.9.3585.6740
+						</a>
+					</p>
+				</div>
+				<div class="social">
+					<div class="github">
+						<a href="https://github.com/hotellimabravo" target="_blank">
+							<img src="./github.png" alt="" class="github_img" />
+						</a>
+					</div>
+					<div class="linkedin">
+						<a
+							href="https://www.linkedin.com/in/hugobalttazar/"
+							target="_blank"
+						>
+							<img src="./linkedin.png" alt="" class="linkedin_img" />
+						</a>
+					</div>
+					<div class="twitter">
+						<a href="https://twitter.com/hotellimabravo" target="_blank">
+							<img src="./twitter.png" alt="" class="twitter_img" />
+						</a>
+					</div>
+					<div class="instagram">
+						<a href="https://www.instagram.com/hbalttazar/" target="_blank">
+							<img src="./instagram.png" alt="" class="instagram_img" />
+						</a>
+					</div>
+					<div class="facebook">
+						<a href="https://www.facebook.com/hotellimabravo/" target="_blank">
+							<img src="./facebook.png" alt="" class="facebook_img" />
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
